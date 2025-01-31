@@ -34,9 +34,9 @@ export default function Home() {
 
   return (
     <>
-      <PreLoader />
+      <PreLoader /> {/** DONE */}
 
-      <NavBar />
+      <NavBar /> {/** DONE */}
 
       {/* <ScrollerMotion> */}
       <main className="flex flex-col items-center justify-center">
@@ -44,7 +44,7 @@ export default function Home() {
         <Work />
         <Reviews/>
         <About />
-        <Blog />
+        {/* <Blog /> */}
         <Contact />
         <Footer />
       </main>

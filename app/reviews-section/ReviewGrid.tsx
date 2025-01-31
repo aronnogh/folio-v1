@@ -30,7 +30,7 @@ const Reviews = () => {
               name={review.name}
               role={review.role}
               company={review.company}
-              profileImg={review.profileImg}
+              // profileImg={review.profileImg}
               testimonial={review.testimonial}
               index={index}
             />
@@ -53,7 +53,7 @@ const Reviews = () => {
           amount: "some",
           once: true,
         }}
-        href="https://contra.com/victorwilliams"
+        href="https://contra.com/koushik_ghosh_epuujnrm"
         target="_blank"
         className="mt-10 mb-5 sm:mb-0 sm:mt-20"
       >

@@ -1,26 +1,38 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react'
+import HomeImg from "./error.png";
+import Link from 'next/link';
+
 
 const NotFound = () => {
   return (
-    <div className="flex h-[100vh] flex-col items-center justify-center bg-[#0E1016] text-[#e4ded7] gap-5">
-      <p className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] uppercase">Egbon, you don miss road oh!</p>
-      <Image
-        src="https://user-images.githubusercontent.com/84178696/228884970-66a9687c-b364-48e4-91ca-05332dadbba9.png"
-        alt="Funny Meme"
-        width={858}
-        height={483}
-        className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%]"
-      />
-      <div>
-        <Link href="/" className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] uppercase">
-          Head back to my{" "}
-          <span className="underline underline-offset-2">Portfolio</span>
-        </Link>
-      </div>
-    </div>
-  );
-};
+    <section className="home grid h-screen pt-32 pb-16 w-full bg-black text-slate-400">
+      <div className="home__container container grid content-center gap-12 lg:max-w-5xl lg:grid-cols-2 lg:items-center">
+        <div className="home__data justify-self-center text-center lg:text-left">
+          <p className="pb-2 font-semibold">Error 404</p>
+          <h1 className="pb-4 text-5xl font-bold lg:text-6xl">Hey Buddy</h1>
+          <p className="pb-8 font-semibold">
+            We can&apos;t seem to find the page <br />
+            you are looking for.
+          </p>
+          <Link
+            href="./"
+            className="inline-flex items-center justify-center rounded-full bg-white py-4 px-8 font-bold text-gray-900"
+          >
+            Go Home
+          </Link>
+        </div>
 
-export default NotFound;
+        <div className="home__img justify-self-center">
+          <img
+            src={"./error.png"}
+            className="w-64 animate-floting lg:w-[400px]"
+            alt="home image"
+          />
+          <div className="home__shadow mx-auto h-8 w-36 animate-shadow rounded-[50%] bg-gray-900/30 blur-md lg:w-64"></div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default NotFound

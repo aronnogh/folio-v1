@@ -1,9 +1,9 @@
 {
-  "name": "folio-v1",
-  "version": "0.1.0",
+  "name": "aronno-folio",
+  "version": "01.01.31012025",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -17,12 +17,13 @@
     "@vercel/analytics": "^0.1.11",
     "blobity": "^0.2.3",
     "eslint": "8.35.0",
-    "eslint-config-next": "13.2.3",
+    "eslint-config-next": "15.1.6",
     "framer-motion": "^10.6.1",
-    "gsap": "^3.11.5",
-    "next": "13.2.3",
-    "react": "^18.2.0",
-    "react-dom": "18.2.0",
+    "gsap": "^3.12.7",
+    "lucide-react": "^0.474.0",
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-intersection-observer": "^9.4.3",
     "resize-observer-polyfill": "^1.5.1",
     "scroller-motion": "^1.2.3",
@@ -31,12 +32,15 @@
   },
   "devDependencies": {
     "@types/node": "18.15.0",
-    "@types/react": "18.0.28",
+    "@types/react": "19.0.8",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.5",
     "tailwind-scrollbar": "^3.0.0",
     "tailwindcss": "^3.2.7"
+  },
+  "overrides": {
+    "@types/react": "19.0.8"
   }
 }

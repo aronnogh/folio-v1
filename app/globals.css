@@ -37,3 +37,10 @@ body {
 body {
   overflow-y: hidden;
 }
+
+
+@layer components {
+  .container {
+    @apply mx-auto w-[calc(100%-3rem)] max-w-screen-xl;
+  }
+}
